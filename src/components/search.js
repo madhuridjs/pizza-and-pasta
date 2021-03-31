@@ -6,26 +6,25 @@ import Items from './items';
 
 
 function App() {
-    const [result,setResult] = useState([])
-    const[items, setItems] = useState("")
+    const [result,setResult] = useState([]);
+    const[items, setItems] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         fetchData()
     },[])
 
     const fetchData = () => {
-        
+        setIsLoading(true);
         axios.get(`https://forkify-api.herokuapp.com/api/search?q=${items}`).then(res => {
             setResult(res.data.recipes);
             console.log(res.data.recipes);
-        })
+        })   
     }
-
     return(
         <>
             <section>
                 <div>
-                    {/* <h1 className= "logo">P&P</h1> */}
                     <div className= "search_container">
                         <input
                             className= "search_input" 
