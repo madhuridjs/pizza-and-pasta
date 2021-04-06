@@ -11,30 +11,50 @@
    
 }
 .ingredients_image{
-    width:450px;
-    margin-left: -4px;
-    position: absolute;
-    top: 50%;
-   left: 50%;
-   width: 500px;
-   height: 500px;
-   margin-top: -167px; 
-   margin-left: -231px;
-    height: 350px;
-}
-.ingredients_title{
-    width:450px;
+    width:445px;
     margin-left: -4px;
     position: absolute;
     top: 50%;
     left: 50%;
     width: 500px;
     height: 500px;
-    margin-top: 130px; 
-    margin-left: -150px;
+    margin-top: -167px; 
+    margin-left: -240px;
     height: 350px;
-    transform: rotate(-10deg);
 }
-.ingredients_sub{
-    background: blue;
+.ingredients_title{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    width: 348px;
+    margin-top: 165px; 
+    margin-left: -161px;
+    height: 45px;
+    transform: rotate(-4deg);
+    background-color: #ff7f50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.ingredients_list{
+    position: absolute;
+    top: 90%;
+    left: 38%;
+    width: 481px;
+    padding-left: 20px;
+    margin-top: 50px; 
+    margin-left: -79px;
+    background: #ecf0f1;
+}
+.ingredients_list_items{
+    list-style: none;
+}
+.ingredients_icons{
+    color:  #ff7f50;
+}
+.ingredients_loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }

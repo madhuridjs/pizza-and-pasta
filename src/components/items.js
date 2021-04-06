@@ -1,5 +1,4 @@
 import {Link} from "react-router-dom";
-import Ingredients from "./ingredients";
 import axios from 'axios';
 import React , {useState, useEffect} from 'react';
 
@@ -23,14 +22,13 @@ const Items = ({items}) => {
     return(
         <Link to= {`/Items/${items.recipe_id}`}>
             <div key = {items.recipe_id} className= "items_container">
-            <img className= "item_image" src = {items.image_url}/>
-            <ul className= "items">
-                <li className= "item_title">{`${items.title.substring(0,10)}...`}</li>
-                <li className= "item_pub">{items.publisher}</li>
-            </ul>
-        </div>
-        </Link>
-        
+                <img className= "item_image" src = {items.image_url}/>
+                <ul className= "items">
+                    <li className= "item_title">{`${items.title.substring(0,10)}...`}</li>
+                    <li className= "item_pub">{items.publisher}</li>
+                </ul>
+            </div>
+        </Link>   
     )
 }
 export default Items;

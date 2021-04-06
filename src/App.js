@@ -4,8 +4,10 @@ import Ingredients from './components/ingredients';
 import Items from'./components/items';
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
 
+
 function App() {
     return (
+    
       <BrowserRouter>
       <section className= "container">
         <Search />
@@ -15,6 +17,7 @@ function App() {
         </Switch>
       </section> 
       </BrowserRouter>
+    
     );
   }
 export default App;
